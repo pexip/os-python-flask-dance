@@ -1,0 +1,30 @@
+Source: python-flask-dance
+Section: python
+Priority: optional
+Maintainer: Pexip AS <packaging@pexip.com>
+Build-Depends: debhelper (>= 11), dh-python, python3-all, python3-setuptools, python3-toml,
+ python3-pytest,
+ python3-pytest-mock,
+ python3-responses,
+ python3-sqlalchemy (>= 1.3),
+ python3-flask-sqlalchemy,
+ python3-flask-login,
+ python3-flask-caching,
+ python3-requests-oauthlib,
+ python3-betamax,
+ python3-urlobject,
+ python3-freezegun,
+ python3-werkzeug (>= 1.0.0)
+Standards-Version: 4.1.3
+Homepage: https://github.com/singingwolfboy/flask-dance
+X-Python3-Version: >= 3.7
+Vcs-Browser: https://github.com/singingwolfboy/flask-dance
+Vcs-Git: https://github.com/singingwolfboy/flask-dance.git
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-python
+
+Package: python3-flask-dance
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: Flask Oauth Provider
+ Doing the OAuth dance with style using Flask, requests, and oauthlib. Currently, only OAuth consumers are supported, but this project could easily support OAuth providers in the future, as well. The full documentation for this project is hosted on ReadTheDocs, including the full list of supported OAuth providers, but this README will give you a taste of the features.

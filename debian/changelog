@@ -1,0 +1,5 @@
+python-flask-dance (5.0.0-0pexip1) pexip; urgency=medium
+
+  * Prepare Pexip Packaging
+
+ -- Huw Jones <huw@pexip.com>  Tue, 8 Jun 2021 17:30:43 +0100
