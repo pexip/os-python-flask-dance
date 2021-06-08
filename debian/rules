@@ -1,10 +1,9 @@
-
 #!/usr/bin/make -f
 # See debhelper(7) (uncomment to enable)
 # output every command that modifies files on the build system.
 #export DH_VERBOSE = 1
-
 export PYBUILD_NAME=python-flask-dance
+export PYBUILD_TEST_ARGS=--fixtures $(shell pwd)/flask_dance/fixtures/pytest.py
 
 %:
-    dh $@ --with python3 --dir=src --buildsystem=pybuild
+	dh $@ --with python3 --dir=src --buildsystem=pybuild
